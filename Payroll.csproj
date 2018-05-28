@@ -7,5 +7,6 @@
 
   <ItemGroup>
     <Compile Remove="Manager : Staff.cs" />
+    <Compile Remove="Admin.cs" />
   </ItemGroup>
 </Project>

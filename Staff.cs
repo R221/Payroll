@@ -7,9 +7,9 @@ namespace Payroll
         private int hWorked;
 
 
-        float TotalPay { get; set}
-        float BasicPay { get; set}
-        string NameOfStaff { get; set}
+        public float TotalPay { get; set; }
+        public float BasicPay { get; set; }
+        public string NameOfStaff { get; set; }
         public int HoursWorked
         {
             get
@@ -19,7 +19,7 @@ namespace Payroll
             set
             {
                 if (HoursWorked > 0)
-                    return value;
+                    return;
 
                 else
                     hWorked = 0;
@@ -32,7 +32,7 @@ namespace Payroll
             hourlyRate = rate;
         }
 
-        public virtual CalculatePay()
+        public virtual void CalculatePay()
         {
             Console.WriteLine("Calculating Pay...");
             BasicPay = hWorked * hourlyRate;

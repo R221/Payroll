@@ -1,10 +1,8 @@
 ﻿using System;
 namespace Payroll
 {
-    public class Admin
+    public class Admin : Staff
     {
-        public Admin()
-        {
-        }
+        public string admin1;
     }
 }
