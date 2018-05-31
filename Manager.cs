@@ -17,9 +17,13 @@ namespace Payroll
             Allowance = 1000;
 
             if (HoursWorked > 160)
-                TotalPay = BasicPay + Allowance;
-             else
+            {
+                TotalPay = BasicPay + Overtime;
+            }
+            else
+            {
                 TotalPay = BasicPay;
+            }
             
         }
 
