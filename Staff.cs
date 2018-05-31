@@ -10,6 +10,7 @@ namespace Payroll
         public float TotalPay { get; set; }
         public float BasicPay { get; set; }
         public string NameOfStaff { get; set; }
+
         public int HoursWorked
         {
             get

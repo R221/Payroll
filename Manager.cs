@@ -26,9 +26,8 @@ namespace Payroll
         public override string ToString()
         {
             return "Name of staff: " + NameOfStaff +
-                ",hourlyRate: " + managerHourlyRate +
-                ", hWorked: " + HoursWorked;
+            ",hourlyRate: " + managerHourlyRate +
+            ", hWorked: " + HoursWorked;
         }
-
     }
 }
